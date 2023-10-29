@@ -8,10 +8,10 @@ Follow these steps to run the server locally:
 
 1. **Clone the Repository**: 
 ```
-git clone https://github.com/your-username/bookstore-api.git
+git clone https://github.com/your-username/bookstore.git
 ```
 ```
-cd bookstore-api
+cd bookstore
 ```
 
 2. **Install Dependencies**: 
