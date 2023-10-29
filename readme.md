@@ -77,4 +77,19 @@ The server will start locally on [http://localhost:8000](http://localhost:8000).
 - **Endpoint**: DELETE `https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod/api/v1/books/:id`
 - **Description**: Delete a specific book by its unique ID.
 
+## Screenshot
+<img width="1513" alt="Screenshot 2023-10-30 at 2 43 35 AM" src="https://github.com/KunalAnkur/bookstore/assets/57923976/53cb4fe4-1f5b-4fd0-9e34-51e0c2bfb029">
+
+<img width="1408" alt="Screenshot 2023-10-30 at 2 43 56 AM" src="https://github.com/KunalAnkur/bookstore/assets/57923976/63f10fe9-2723-4f6a-9829-6264a6a516e7">
+
+<img width="1410" alt="Screenshot 2023-10-30 at 2 44 38 AM" src="https://github.com/KunalAnkur/bookstore/assets/57923976/d9210a97-b064-4c48-8019-9cfbf3276bea">
+
+<img width="1412" alt="Screenshot 2023-10-30 at 2 45 10 AM" src="https://github.com/KunalAnkur/bookstore/assets/57923976/a722fe9a-f37c-49ba-a7fc-54191c939980">
+<img width="1400" alt="Screenshot 2023-10-30 at 2 45 43 AM" src="https://github.com/KunalAnkur/bookstore/assets/57923976/64449e8d-b0a0-4b2b-b59b-29de95ef4300">
+
+<img width="1401" alt="Screenshot 2023-10-30 at 2 46 02 AM" src="https://github.com/KunalAnkur/bookstore/assets/57923976/4e5ba912-00fd-4bc3-8283-80fc7e67467e">
+
+
+
+
 
