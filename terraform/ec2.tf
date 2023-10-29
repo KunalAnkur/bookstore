@@ -1,5 +1,5 @@
 resource "aws_instance" "bookstore" {
-  ami           = "ami-0fc5d935ebf8bc3bc"
+  ami           = "ami-0b186c03eb0609250"
   instance_type = "t2.micro"
   key_name      = "bookstore-key"
   subnet_id     = aws_subnet.public-us-east-1a.id

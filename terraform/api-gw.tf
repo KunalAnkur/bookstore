@@ -26,6 +26,6 @@ resource "aws_apigatewayv2_route" "api-gw" {
   target    = "integrations/${aws_apigatewayv2_integration.api-gw.id}"
 }
 
-output "api_gw_example_1_health_url" {
-  value = "${aws_apigatewayv2_stage.prod.invoke_url}/health"
+output "api_gw_url" {
+  value = "${aws_apigatewayv2_stage.prod.invoke_url}"
 }
