@@ -7,12 +7,18 @@ Welcome to the Bookstore API! This API allows you to manage a collection of book
 Follow these steps to run the server locally:
 
 1. **Clone the Repository**: 
-```git clone https://github.com/your-username/bookstore-api.git```
-```cd bookstore-api```
+```
+git clone https://github.com/your-username/bookstore-api.git
+```
+```
+cd bookstore-api
+```
 
 2. **Install Dependencies**: 
 
-```npm install```
+```
+npm install
+```
 
 
 3. **Create Environment Variables**:
@@ -26,7 +32,9 @@ PORT=8000
 
 4. **Start the Server**:
 
-```npm start```
+```
+npm start
+```
 The server will start locally on [http://localhost:8000](http://localhost:8000).
 
 ## API Documentation
