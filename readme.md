@@ -2,6 +2,10 @@
 
 Welcome to the Bookstore API! This API allows you to manage a collection of books. You can add, update, delete, and view books using the provided endpoints. This README provides instructions on how to run the server locally, deploy the API documentation, and offers insights into the tech stack and API endpoints.
 
+## API Documentation
+
+Explore the API documentation to understand available endpoints, request/response formats, and how to interact with the API. The documentation is available [here](<https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod/api/docs>).
+
 ## Local Setup
 
 Follow these steps to run the server locally:
@@ -36,10 +40,6 @@ PORT=8000
 npm start
 ```
 The server will start locally on [http://localhost:8000](http://localhost:8000).
-
-## API Documentation
-
-Explore the API documentation to understand available endpoints, request/response formats, and how to interact with the API. The documentation is available [here](<https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod>).
 
 ## Tech Stack
 
