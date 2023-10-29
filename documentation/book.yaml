@@ -1,0 +1,132 @@
+openapi: 3.0.0
+info:
+  title: Bookstore API
+  version: 1.0.0
+  description: API for managing books in a bookstore
+
+
+tags:
+  - name: Books
+    description: Operations on books
+
+paths:
+  /api/v1/books:
+    get:
+      summary: Get a list of all books
+      tags:
+        - Books
+      responses:
+        '200':
+          description: A list of books
+        '500':
+          description: Internal server error
+
+    post:
+      summary: Add a new book
+      tags:
+        - Books
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: The title of the book
+                author:
+                  type: string
+                  description: The author of the book
+                summary:
+                  type: string
+                  description: A brief summary of the book
+              required:
+                - title
+                - author
+                - summary
+      responses:
+        '201':
+          description: The created book
+        '400':
+          description: Bad request, missing required fields (title, author, or summary)
+        '500':
+          description: Internal server error
+
+  /api/v1/books/{id}:
+    get:
+      summary: Get a specific book by ID
+      tags:
+        - Books
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The ID of the book to retrieve
+          schema:
+            type: string
+      responses:
+        '200':
+          description: The book details
+        '400':
+          description: Bad request, invalid ID parameter
+        '404':
+          description: Book not found
+        '500':
+          description: Internal server error
+
+    put:
+      summary: Update a book by ID
+      tags:
+        - Books
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The ID of the book to update
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                  description: The updated title of the book
+                author:
+                  type: string
+                  description: The updated author of the book
+                summary:
+                  type: string
+                  description: The updated summary of the book
+      responses:
+        '201':
+          description: The updated book
+        '400':
+          description: Bad request, invalid ID parameter
+        '404':
+          description: Book not found
+        '500':
+          description: Internal server error
+
+    delete:
+      summary: Delete a book by ID
+      tags:
+        - Books
+      parameters:
+        - in: path
+          name: id
+          required: true
+          description: The ID of the book to delete
+          schema:
+            type: string
+      responses:
+        '204':
+          description: No Content
+        '400':
+          description: Bad request, invalid ID parameter
+        '404':
+          description: Book not found
+        '500':
+          description: Internal server error
