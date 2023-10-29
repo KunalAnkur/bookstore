@@ -7,7 +7,7 @@ const { bodyCheck, paramsCheck } = require("../middlewares/validator")
 router.get('/', listBooks);
 
 // Get a specific book by ID
-router.get('/:id', getBook);
+router.get('/:id', paramsCheck, getBook);
 
 // Add a new book
 

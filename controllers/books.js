@@ -3,11 +3,25 @@ const Book = require('../models/Book');
 // Get a list of all books
 exports.listBooks = async (req, res) => {
     try {
-        // Fetch all books from the database
-        const books = await Book.find();
+        // Get the limit and offset from the query parameters, with default values
+        const limit = parseInt(req.query.limit) || 10; // Default: 10 items per page
+        const offset = parseInt(req.query.offset) || 0; // Default: start from the beginning
 
-        // Respond with a 200 OK status and the list of books
-        return res.status(200).json(books);
+        // Fetch books from the database with pagination
+        const books = await Book.find()
+            .skip(offset)  // Skip the specified number of items
+            .limit(limit); // Limit the result to the specified number of items
+
+        // Count total number of books in the database
+        const totalBooks = await Book.countDocuments();
+
+        // Respond with a 200 OK status, the list of books, and pagination information
+        return res.status(200).json({
+            books,
+            totalBooks,
+            limit,
+            offset
+        });
     } catch (error) {
         // Handle any errors and respond with a 500 Internal Server Error
         return res.status(500).json({ message: 'Internal server error', error });
