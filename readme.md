@@ -2,6 +2,16 @@
 
 Welcome to the Bookstore API! This API allows you to manage a collection of books. You can add, update, delete, and view books using the provided endpoints. This README provides instructions on how to run the server locally, deploy the API documentation, and offers insights into the tech stack and API endpoints.
 
+## Decisions and Assumptions
+
+1. **Decoupled Architecture**: A central consideration throughout development was to create a decoupled architecture. This design approach ensures that the application is flexible and extensible, allowing for the easy addition of new features in the future.
+
+2. **Terraform for Infrastructure**: To manage infrastructure as code, Terraform was chosen. This decision simplifies the process of provisioning and managing resources on AWS, making the application infrastructure more scalable and maintainable.
+
+3. **API Documentation with Swagger**: Swagger was integrated into the project to provide comprehensive and interactive API documentation. This enhances the user experience and simplifies interaction with the API.
+
+4. **Scalability**: The project was architected with scalability in mind, ensuring that it can handle growth and increased usage effectively.
+
 ## API Documentation
 
 Explore the API documentation to understand available endpoints, request/response formats, and how to interact with the API. The documentation is available [https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod/api/docs/](https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod/api/docs).
