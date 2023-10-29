@@ -4,7 +4,7 @@ Welcome to the Bookstore API! This API allows you to manage a collection of book
 
 ## API Documentation
 
-Explore the API documentation to understand available endpoints, request/response formats, and how to interact with the API. The documentation is available [here](<https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod/api/docs>).
+Explore the API documentation to understand available endpoints, request/response formats, and how to interact with the API. The documentation is available [here](https://4ue4plftuf.execute-api.us-east-1.amazonaws.com/prod/api/docs).
 
 ## Local Setup
 
