@@ -20,6 +20,10 @@ const booksRoute = require('./routes/books');
 
 app.use('/api/v1/books', booksRoute);
 
+app.use('*', (req, res) => {
+    res.redirect("/api/docs")
+})
+
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
