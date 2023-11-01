@@ -22,7 +22,7 @@ Follow these steps to run the server locally:
 
 1. **Clone the Repository**: 
 ```
-git clone https://github.com/your-username/bookstore.git
+git clone https://github.com/KunalAnkur/bookstore.git
 ```
 ```
 cd bookstore
